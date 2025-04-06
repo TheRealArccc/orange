@@ -8,14 +8,27 @@
     <!-- fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Permanent+Marker&family=Sigmar&display=swap" rel="stylesheet">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .bg-1 {
-            background-image: url(https://cdn.discordapp.com/attachments/1289480440041705472/1340997733691166730/IMG_0760.png?ex=67b464f6&is=67b31376&hm=8ccd5feeb086cb23b35dd9b0fb9bb8df236abb80e482bc6e5b33b0b9f51fcd72&);
+            background-image: url("img/orange_portrait_cropped.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-2 {
+            background-image: url("img/orange_black_shirt_cropped.png");
+            background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -31,6 +44,12 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        .permanent-marker-regular {
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-style: normal;
+            }
 
         .sigmar-regular {
             font-family: "Sigmar", serif;
@@ -48,6 +67,7 @@
             position: sticky;
             top: 0;
             padding: 0vw;
+            z-index: 1;
         }
         
         .navbar-link {
@@ -85,7 +105,7 @@
     </navbar>
     
 
-    <div class="bg-1">
+    <div class="bg-1" id="top">
         <!-- <div class="text-center">
             <img src="https://cdn.discordapp.com/attachments/1289480440041705472/1335864623861334026/IMG_0758.png?ex=67aa4a21&is=67a8f8a1&hm=25add5d77f676268540bdb0cc6c86c80948be7ad153613cb657f38fa484478d4&" style="width: 10vw" onclick="respond()">
         </div> -->
@@ -108,11 +128,57 @@
                 <br>
                 <br>
                 <h1 class="anton-regular" style="color: orange;">To him, it is an <span class="badge-pill badge-warning text-dark">art</span></h1>
+                <br>
+                <br>
+                <h1 class="permanent-marker-regular text-light" style="font-size: 80px;">"More than just an orange"</h1>
+                <h5 class="anton-regular text-light"> - ranmeat</h5>
+                <br>
+                <br>
+                <hr>
             </div> 
         </div>
+    </div>
 
+    <div class="bg-2" id="description">
+        <div class="container text-center">
+            <br>
+            <br>    
+            <h1 class="anton-regular badge badge-dark" style="font-size: 60px; border-radius: 30px;">How the Champion came to be</h1>
+            <br>
+            <hr>
+            <br>
+            <div class="card-deck">
+                <div class="card warning-card" width="20%">
+                    <div class="card-img-top">
+                        <img src="img/Oranges.webp" alt="" width="100%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h1 class="lilita-one-regular">The Creation of The Orange</h1>
+                        </div>
+                        <div class="card-text card-warning">
+                            <p class="lilita-one-regular">Thousands of years ago, the champion created the first orange, with knowledge many years ahead of his people. Eventually the first batch of orange groves were grown and mass produced.</p>
+                        </div>
+                    </div>
+                </div>
 
-        
+                <div class="card warning-card" width="20%">
+                    <div class="card-img-top">
+                        <img src="img/orange_eating_2.png   " alt="" width="100%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h1 class="lilita-one-regular">The First Bite</h1>
+                        </div>
+                        <div class="card-text card-warning">
+                            <p class="lilita-one-regular">When he took the first bite from the first orange, he was granted with the powers of Pomona, marking the start of the dark orange ages in 314 BCE</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
     <!-- Optional JavaScript -->
